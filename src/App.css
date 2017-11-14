@@ -1,0 +1,215 @@
+*{
+  box-sizing:border-box;
+}
+
+/*@font-face{
+  font-family:'Josefin Sans';
+  src:url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+}
+
+@font-face{
+  font-family: 'Dancing Script';
+  src:url(https://fonts.googleapis.com/css?family=Dancing+Script);
+}*/
+
+.App {
+  /*display: flex;*/
+}
+
+h1,h2{
+  font-family: 'Pacifico', serif;
+}
+
+h5,h6, p{
+
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
+}
+
+
+ul{
+  list-style:none;
+  text-indent:0;
+}
+
+.navContainer{
+  display: flex;
+}
+
+h6{
+  font-size: 2.5vh;
+}
+
+.nav{
+  border-right:1px solid grey;
+  width: 20vw;
+  height:80vh;
+}
+
+.nav ul, .headingContainer, .return{
+  cursor:pointer;
+}
+
+.return:hover{
+  border-bottom:2px solid rgb(130, 1, 42);
+  width:9vw;
+  white-space: nowrap;
+}
+
+.dropDown li p{
+
+  padding:0;
+  margin: 1vh;
+}
+
+
+.topLevel li p:hover, .dropDown li p:hover{
+  border-right:2px solid rgb(130, 1, 42);
+}
+
+.wine-icon{
+  height:10vh;
+  width:10vh;
+  margin-bottom: 1vh;
+  background-image: url(/images/wineicons.png);
+  background-size:300%;
+  background-position: 0% 0%;
+  background-color: rgb(142, 95, 112);
+  animation: App-logo-change 10s infinite linear;
+  border-radius: 10vh;
+}
+
+.headingContainer{
+  margin-top: 5vh;
+  line-height: 1vh;
+  white-space: nowrap;
+  width:100vw;
+  display: flex;
+  border-bottom:1px solid grey;
+  margin-bottom: .5vh;
+}
+
+.headingContainer, .headingContainer h1{
+  margin-left: 2vw;
+}
+
+.content-container{
+  width:90vw;
+  height:90vh;
+  position: relative;
+  margin-left: 1vw;
+}
+
+.wine-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+.list-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom:2px solid grey;
+  width:10vw;
+  padding:1vw;
+  margin:2vw;
+  margin-top:1vh;
+  transition: .25s
+}
+
+.list-item:hover{
+  background-color: rgba(91, 3, 31,0.4);
+  border-bottom:2px solid rgb(130, 1, 42);
+}
+
+.list-item img{
+  width:8vw;
+  border-radius: 2vw;
+}
+
+.list-pic{
+  /*height:28vh;*/
+}
+
+.wine-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wine-price h5 {
+  color:rgb(130, 1, 42);
+}
+
+.show{
+  width:80vw;
+}
+
+.show span {
+  color:rgb(130, 1, 42);
+}
+
+.main-container, .info-container{
+  display:flex;
+}
+
+.info-container {
+  width:40vw;
+  justify-content: space-around;
+}
+
+.info-container p{
+  color:rgb(130, 1, 42);
+  font-weight: bolder;
+}
+
+.description{
+  width:40vw;
+
+}
+
+button:hover{
+  color:white;
+  background-color:rgb(130, 1, 42)
+}
+
+form{
+  margin:5vw;
+  width:40vw;
+}
+
+input{
+  width:30vw;
+  font-size: 2vh;
+}
+
+form button{
+  margin-top: 2vh;
+}
+
+
+
+@keyframes App-logo-change {
+  0%{background-position:0%0%}
+  9%{background-position:0%0%}
+  10%{background-position:50%0%}
+  19%{background-position:50%0%}
+  20%{background-position:100%0%}
+  29%{background-position:100%0%}
+  30%{background-position:100%50%}
+  39%{background-position:100%50%}
+  40%{background-position:100%100%}
+  49%{background-position:100%100%}
+  50%{background-position:50%100%}
+  59%{background-position:50%100%}
+  60%{background-position:0%50%}
+  69%{background-position:0%50%}
+  70%{background-position:50%50%}
+  79%{background-position:50%50%}
+  80%{background-position:0%0%}
+  89%{background-position:0%0%}
+  90%{background-position:50%0%}
+  99%{background-position:50%0%}
+  100%{background-position:100%0%}
+}
