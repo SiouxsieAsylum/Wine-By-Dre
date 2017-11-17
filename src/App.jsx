@@ -33,7 +33,7 @@ class App extends Component {
   }
 
   grabWineList(){
-    fetch('http://myapi-profstream.herokuapp.com/api/edd743/wines')
+    fetch('https://myapi-profstream.herokuapp.com/api/edd743/wines')
     .then(response => response.json())
     .then(responseJson => {
       this.setState({
@@ -119,7 +119,7 @@ class App extends Component {
 
   wineFormSubmission(wine){
     const wineId = wine.id ? `/${wine.id}` : ''
-    fetch('http://myapi-profstream.herokuapp.com/api/edd743/wines' + wineId, {
+    fetch('https://myapi-profstream.herokuapp.com/api/edd743/wines' + wineId, {
       method: wineId ? 'PUT' : 'POST',
       headers: {
         'Accept': 'application/json, text/plain, */*',
