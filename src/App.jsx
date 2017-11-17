@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+ import React, { Component } from 'react';
 import Nav from './components/nav.jsx';
 import Header from './components/header.jsx'
 import ContentContainer from './components/content.jsx'
