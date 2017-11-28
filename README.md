@@ -3,9 +3,9 @@
 
 Wine By Dre is a React application running [a free heroku wine api](http://myapi-profstream.herokuapp.com/api/[app_id]/wines). It's designed in a modern, yet rustic style to give the impression of an old time store. 
 
-###Index of All Wines
+### Index of All Wines
 ![All Wines](fullpage.png)
-###Single Wine View
+### Single Wine View
 ![One Wine](onepage.png)
 
 The icon is a single image containing 9 icons, with `CSS3 @keyframes` animations, `background position` set to multiple different percentages over the course of the animation. 
