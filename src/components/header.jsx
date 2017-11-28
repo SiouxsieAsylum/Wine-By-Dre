@@ -17,7 +17,7 @@ class Header extends Component{
   render(){
     return(
         <div className="headingContainer">
-          <div onClick={() => this.props.indexSetTrue()} className="wine-icon"></div>
+          <div style={{backgroundImage:'url(images/wineicons.png)'}} onClick={() => this.props.indexSetTrue()} className="wine-icon"></div>
           <h1 onClick={() => this.props.indexSetTrue()}>Wines By Dre</h1>
           <ConditionalHeading index={this.props.index}
                               selected={this.props.selected}
